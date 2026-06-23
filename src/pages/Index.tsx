@@ -169,7 +169,7 @@ const Index = () => {
           </div>
           <Button
             onClick={() => setIsFormOpen(true)}
-            className="gradient-primary hover:opacity-90 shadow-glow gap-2"
+            className="hover:opacity-90 shadow-glow gap-2"
             size="lg"
           >
             <Plus className="h-5 w-5" />
@@ -184,7 +184,6 @@ const Index = () => {
             value={`$${stats.total.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
             subtitle={`${stats.expenseCount} transactions`}
             icon={Wallet}
-            variant="primary"
             delay={0}
           />
           <SummaryCard
@@ -223,7 +222,6 @@ const Index = () => {
                 : 'No data yet'
             }
             icon={PieChart}
-            variant="accent"
             delay={300}
           />
         </div>
